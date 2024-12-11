@@ -107,29 +107,6 @@ a:hover {
     transition: background 0.5s cubic-bezier(.17,.67,.83,.67);
 }
 
-.navbar-white {
-    background-color: #fff !important;
-    transition: background 0.5s ease-out;
-
-}
-
-.navbar-white li a {
-    color: #16a085 !important;
-}
-
-.navbar-white .navbar-brand {
-    color: #16a085 !important;
-}
-
-.navbar-white button.navbar-toggle {
-    margin-top: 5px;
-    margin-right: 10px;
-}
-
-.navbar-white button.navbar-toggle .ion-navicon {
-    color: #000;
-}
-
 .form-control:focus {
 border-color: #3acab1;
 box-shadow: none;
