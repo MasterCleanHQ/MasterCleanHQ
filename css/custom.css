@@ -1,3 +1,80 @@
+/* New Navy Blue and Orange Color Scheme */
+:root {
+    --primary-color: #00274d; /* Navy Blue */
+    --accent-color: #ff6700; /* Orange */
+}
+
+/* Navbar Styles */
+.navbar-default {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: var(--accent-color);
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 26px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: var(--accent-color);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+}
+
+/* Heading Styles */
+#heading-text h3 {
+    color: var(--primary-color);
+}
+
+#heading-text p {
+    color: var(--accent-color);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.main-footer a {
+    color: var(--accent-color);
+}
+
+.main-footer a:hover {
+    color: #fff;
+}
+
 @import url(omnes-pro.css);
 @import url(http://fonts.googleapis.com/css?family=Coda);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
