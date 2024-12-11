@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | MasterClean HQ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0056b3;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #0056b3;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background: #003f8a;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #333;
+      padding: 8px 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .disabled-link {
+      cursor: default;
+      pointer-events: none;
+    }
+    .disabled-link::after {
+      content: " ▼";
+      font-size: 0.8em;
+      color: white;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    footer a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MasterClean HQ</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <div class="dropdown">
+      <a class="disabled-link">Services</a>
+      <div class="dropdown-content">
+        <a href="commercial-cleaning.html">Commercial Cleaning</a>
+        <a href="post-construction-cleaning.html">Post-Construction Cleaning</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>About Us</h2>
+    <p>At MasterClean HQ, we pride ourselves on delivering top-notch commercial cleaning solutions for businesses of all sizes. With years of experience in the industry, our mission is to provide exceptional service tailored to meet the unique needs of our clients.</p>
+    <p>Our team of professionals is trained to handle all aspects of non-residential cleaning, ensuring a spotless and hygienic environment for your business. Whether it's daily maintenance or specialized cleaning services, we’ve got you covered.</p>
+    <p>We are committed to excellence, integrity, and customer satisfaction. Let us take care of your cleaning needs while you focus on what truly matters—your business.</p>
+  </main>
+  <footer>
+    <p>© 2024 MasterClean HQ. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
