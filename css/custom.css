@@ -14,7 +14,6 @@
 /*======================================================================================================
                             Global Styles
 =======================================================================================================*/
-
 body {
     color: #002366; /* Navy blue for default text */
     overflow-x: hidden;
@@ -22,7 +21,7 @@ body {
 }
 
 p {
-    color: #002366; /* Navy blue for all paragraphs */
+    color: #002366; 
     font-size: 17px;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
@@ -40,62 +39,120 @@ li a {
 
 /* Global Link Styles */
 a {
-    color: var(--primary-color); /* Navy Blue */
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--accent-color); /* Orange */
+    color: var(--accent-color);
 }
 
 /*======================================================================================================
                             Navbar Styles
 =======================================================================================================*/
-
+/* Make navbar transparent and white text at the top */
 .navbar-default {
-    background-color: var(--primary-color);
+    background-color: rgba(0,0,0,0.0);
     border: none;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #fff; /* White */
-    font-size: 16px;
-    transition: color 0.5s ease-out; /* Smooth transition */
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: var(--accent-color); /* Orange */
-}
-
-.navbar-default .navbar-brand {
-    color: #fff; /* White */
-    font-size: 26px;
-    transition: color 0.5s ease-out; /* Smooth transition */
-}
-
-.navbar-default .navbar-brand:hover {
-    color: var(--accent-color); /* Orange */
+.navbar-white {
+    background-color: rgba(0,0,0,0); /* transparent */
 }
 
 .navbar-white .navbar-nav > li > a,
 .navbar-white .navbar-brand {
-    color: #fff; /* White */
+    color: #fff !important;
 }
 
+/* Scrolled state: navy background and orange text */
 .navbar-scrolled {
-    background-color: var(--primary-color); /* Use navy blue background */
-    transition: background-color 0.5s ease-out; /* Smooth transition */
+    background-color: var(--primary-color) !important;
+    transition: background 0.5s ease-out;
 }
 
 .navbar-scrolled .navbar-nav > li > a,
 .navbar-scrolled .navbar-brand {
-    color: var(--accent-color); /* Orange */
-    transition: color 0.5s ease-out; /* Smooth transition */
+    color: var(--accent-color) !important;
 }
-/*======================================================================================================
-                            Button Styles
-=======================================================================================================*/
+
+/* Base nav link styles */
+.navbar-default .navbar-nav > li > a {
+    font-size: 16px;
+    transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
+    margin: 5px 20px;
+    padding: 0;
+    line-height: 28px;
+    font-family: "Coda";
+    text-transform: capitalize;
+    color: #E5E5E5;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Coda";  
+    padding: 5px 15px;  
+    font-size: 26px;  
+    line-height: 100%;  
+    height: auto;
+    color: #fff;
+    transition: color 0.5s ease-out;
+}
+
+.nav-wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#wrapper {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#overlay-1 {
+    background-color: rgba(40, 40, 40, 0.6);
+    position: relative;
+}
+
+.starting-text {
+    padding: 177px 0px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 2px;
+}
+
+.rene {
+    font-size: 120px;
+    color: white;
+    font-family: "omnes-pro", "Helvetica", sans-serif;
+    font-weight: 300;
+    margin-top: 75px;
+}
+
+.starting-text h2 {
+    font-family: "omnes-pro", "Helvetica", sans-serif;
+    color: #fff;
+}
+
+.bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+}
+
+.bottom a {
+    color: rgba(192, 192, 192, 0.5);
+}
+
+/* Other sections, buttons, headings, etc. remain as provided */
 
 .btn-primary {
     background-color: var(--primary-color);
