@@ -1,111 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MasterClean HQ</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background: #0056b3;
-      color: white;
-      padding: 20px 0;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      margin-top: 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 15px;
-      display: inline-block;
-    }
-    nav a:hover {
-      background-color: #003f8a;
-      border-radius: 5px;
-    }
-    nav .disabled-link {
-      cursor: default;
-      pointer-events: none;
-    }
-    nav .disabled-link::after {
-      content: " ▼";
-      font-size: 0.8em;
-      color: white;
-    }
-    .dropdown {
-      display: inline-block;
-      position: relative;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f4f4f4;
-      min-width: 200px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-      text-align: left;
-    }
-    .dropdown-content a {
-      color: #333;
-      padding: 10px 15px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    section {
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 600px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterClean HQ</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        header img {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown span {
+            cursor: default;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="82D8963E-6935-4292-B8A4-9AA118CB2770.WEBP" alt="Master Clean HQ Logo" style="width: 120px; height: auto;">
-    <h1>Welcome to MasterClean HQ</h1>
+    <header>
+        <img src="82D8963E-6935-4292-B8A4-9AA118CB2770.WEBP" alt="Master Clean HQ Logo">
+        <h1>Welcome to MasterClean HQ</h1>
+    </header>
+
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <div class="dropdown">
-        <a class="disabled-link">Services</a>
-        <div class="dropdown-content">
-          <a href="commercial-cleaning.html">Commercial Cleaning</a>
-          <a href="post-construction-cleaning.html">Post-Construction Cleaning</a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <span>About</span> <!-- Unclickable -->
+            <div class="dropdown-content">
+                <a href="about-us.html">About Us</a>
+                <a href="team.html">Team</a>
+                <a href="photo.html">Photo</a>
+            </div>
         </div>
-      </div>
-      <a href="contact.html">Contact</a>
+        <div class="dropdown">
+            <span>Services</span> <!-- Unclickable -->
+            <div class="dropdown-content">
+                <a href="commercial-cleaning.html">Commercial Cleaning</a>
+                <a href="post-construction-cleaning.html">Post-Construction Cleaning</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
     </nav>
-  </header>
-  <section>
-    <h2>Your Commercial Cleaning Solution</h2>
-    <p>We specialize in professional non-residential cleaning services for businesses of all sizes. Let us handle your cleaning needs while you focus on what matters most — your business.</p>
-  </section>
-  <footer>
-    © 2024 MasterClean HQ. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a>
-  </footer>
+
+    <section>
+        <h2>Your Commercial Cleaning Solution</h2>
+        <p>We specialize in professional non-residential cleaning services for businesses of all sizes. Let us handle your cleaning needs while you focus on what matters most — your business.</p>
+    </section>
+
+    <footer>
+        © 2024 MasterClean HQ. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a>
+    </footer>
 </body>
 </html>
