@@ -11,7 +11,47 @@
     --accent-color: #ff6700; /* Orange */
 }
 
-/* Navbar Styles */
+/*======================================================================================================
+                            Global Styles
+=======================================================================================================*/
+
+body {
+    color: #002366; /* Navy blue for default text */
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: #002366; /* Navy blue for all paragraphs */
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 31px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/* Global Link Styles */
+a {
+    color: var(--primary-color); /* Navy Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color); /* Orange */
+}
+
+/*======================================================================================================
+                            Navbar Styles
+=======================================================================================================*/
+
 .navbar-default {
     background-color: var(--primary-color);
     border: none;
@@ -36,7 +76,10 @@
     color: var(--accent-color); /* Orange */
 }
 
-/* Button Styles */
+/*======================================================================================================
+                            Button Styles
+=======================================================================================================*/
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -50,7 +93,10 @@
     color: #fff;
 }
 
-/* Heading Styles */
+/*======================================================================================================
+                            Heading Styles
+=======================================================================================================*/
+
 #heading-text h3 {
     color: var(--primary-color); /* Navy Blue */
 }
@@ -59,16 +105,10 @@
     color: var(--accent-color); /* Orange */
 }
 
-/* Links */
-a {
-    color: var(--primary-color); /* Navy Blue */
-}
+/*======================================================================================================
+                            Footer Styles
+=======================================================================================================*/
 
-a:hover {
-    color: var(--accent-color); /* Orange */
-}
-
-/* Footer Styles */
 .main-footer {
     background-color: var(--primary-color); /* Navy Blue */
     color: #fff; /* White */
@@ -83,118 +123,19 @@ a:hover {
 }
 
 /*======================================================================================================
-                            Global
+                            Utility Styles
 =======================================================================================================*/
 
-/* Global Link Styles */
-a {
-    color: #002366; /* Navy blue for all links */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #000; /* Optional: Change hover color to black */
-}
-}
-}
-
-a:hover {
-    color: #000;
-}
-
-.btn {
-    border-radius: 0;
-    transition: background 0.5s cubic-bezier(.17,.67,.83,.67);
-}
-
-.form-control:focus {
-border-color: #3acab1;
-box-shadow: none;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.navbar-default .navbar-toggle {
-    border-color: rgba(221, 221, 221, 0);
-    margin: 0;
-    line-height: 100%;
-}
-
-.navbar-toggle {
-    padding: 0;
-    border-radius: 0;
-}
-
-.navbar {
-    margin-bottom: 0px;
-    padding: 10px 5px;
-    min-height: 0;
-}
-
-button.navbar-toggle .ion-navicon {
-    font-size: 2em;
-    color: #fff;
-}
-
-body {
-    color: #002366; /* Set navy blue as the default text color */
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-}
-
-p {
-    color: #002366; /* Navy blue for all paragraphs */
-    font-size: 17px;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 1px;
-    line-height: 31px;
-}
-
-.row
-{
+.row {
     margin-right: 0px;
     margin-left: 0px;
 }
-ul li
-{
-    list-style: none;
-    display: inline-block;
-}
-li a
-{
-    text-decoration: none;
-}
-#heading-text 
-{
-    padding-top: 10px;
-}
-#heading-text h3 {
-    color: #002366; /* Navy blue for section headings */
-    font-size: 49px;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 58px;
-    text-transform: uppercase;
-}
 
-#heading-text p {
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    padding: 5px 0px
-}
-
-.main_content 
-{
-    padding: 50px 0px;
-}
-
-iframe
-{
+iframe {
     width: 100%;
 }
-.form-control
-{
+
+.form-control {
     border-radius: 0px;
 }
 /*-----------------------------------------------------------------------------------------------------
