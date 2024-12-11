@@ -102,19 +102,22 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
+    var menu = $('#navigation > .navbar');
+    var origOffsetY = $('#bottom').offset().top;
 
-  var menu = $('#navigation > .navbar');
-  var origOffsetY = $('#bottom').offset().top;
+    function scroll() {
+        if ($(window).scrollTop() > origOffsetY) {
+            menu.addClass('navbar-scrolled'); // Add your new class
+            menu.removeClass('navbar-white');
+        } else {
+            menu.addClass('navbar-white');
+            menu.removeClass('navbar-scrolled'); // Remove your new class
+        }
+    }
 
-  function scroll() {
-     if ($(window).scrollTop() > origOffsetY) {
-        menu.addClass('navbar-white');
-     } else {
-        menu.removeClass('navbar-white');
-     }
-  }
+    document.onscroll = scroll;
 
-  document.onscroll = scroll;
-
+    // Trigger scroll function to apply the initial state
+    scroll();
 });
