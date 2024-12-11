@@ -121,7 +121,7 @@ a:hover {
     #overlay-1 {
     background-color: rgba(0, 39, 77, 0.6); /* Navy Blue Tint */
     position: relative;
-    height: 100vh; /* Ensure it spans the full viewport height */
+    height: 1000vh; /* Ensure it spans the full viewport height */
 }
 }
 
