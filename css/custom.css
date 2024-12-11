@@ -158,11 +158,13 @@ button.navbar-toggle .ion-navicon {
 }
 
 body {
+    color: #002366; /* Set navy blue as the default text color */
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
 p {
+    color: #002366; /* Navy blue for all paragraphs */
     font-size: 17px;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
