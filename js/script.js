@@ -108,23 +108,20 @@ $(document).ready(function() {
 ///////////////////////////////
 // Navbar Scroll Behavior
 ///////////////////////////////
-
 $(document).ready(function() {
-    var navbar = $('#navigation > .navbar'); // Target the navbar
-    var scrollOffset = $('#wrapper').offset().top + $('#wrapper').height();
+    var navbar = $('#navigation > .navbar'); 
+    var scrollOffset = 50; // Change offset as needed
 
-    // Function to handle scroll
     function handleScroll() {
         if ($(window).scrollTop() > scrollOffset) {
-            navbar.addClass('navbar-scrolled'); // Add scrolled class
-            navbar.removeClass('navbar-white'); // Remove white class
+            navbar.removeClass('navbar-white');
+            navbar.addClass('navbar-scrolled');
         } else {
-            navbar.addClass('navbar-white'); // Add white class
-            navbar.removeClass('navbar-scrolled'); // Remove scrolled class
+            navbar.removeClass('navbar-scrolled');
+            navbar.addClass('navbar-white');
         }
     }
 
-    // Trigger scroll function on page load and scroll
     $(window).on('scroll', handleScroll);
-    handleScroll(); // Run it once on load in case page is already scrolled
+    handleScroll();
 });
