@@ -1,27 +1,14 @@
+/* Import Fonts (must be at the top) */
+@import url(omnes-pro.css);
+@import url(http://fonts.googleapis.com/css?family=Coda);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
+
+/* Color Variables */
 :root {
     --primary-color: #00274d; /* Navy Blue */
     --accent-color: #ff6700; /* Orange */
-}
-
-/* Navbar Links */
-.navbar-default .navbar-nav>li>a {
-    color: var(--primary-color); /* Navy Blue */
-    font-size: 16px;
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-    color: var(--accent-color); /* Orange */
-}
-
-/* Navbar Brand */
-.navbar-default .navbar-brand {
-    color: var(--primary-color); /* Navy Blue */
-    font-size: 26px;
-}
-
-.navbar-default .navbar-brand:hover {
-    color: var(--accent-color); /* Orange */
 }
 
 /* Navbar Styles */
@@ -31,22 +18,22 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #fff;
+    color: #fff; /* White */
     font-size: 16px;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Orange */
 }
 
 .navbar-default .navbar-brand {
-    color: #fff;
+    color: #fff; /* White */
     font-size: 26px;
 }
 
 .navbar-default .navbar-brand:hover {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Orange */
 }
 
 /* Button Styles */
@@ -65,41 +52,35 @@
 
 /* Heading Styles */
 #heading-text h3 {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Navy Blue */
 }
 
 #heading-text p {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Orange */
 }
 
 /* Links */
 a {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Navy Blue */
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Orange */
 }
 
-/* Footer */
+/* Footer Styles */
 .main-footer {
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: var(--primary-color); /* Navy Blue */
+    color: #fff; /* White */
 }
 
 .main-footer a {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Orange */
 }
 
 .main-footer a:hover {
-    color: #fff;
+    color: #fff; /* White */
 }
-
-@import url(omnes-pro.css);
-@import url(http://fonts.googleapis.com/css?family=Coda);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
 
 /*======================================================================================================
                             Global
