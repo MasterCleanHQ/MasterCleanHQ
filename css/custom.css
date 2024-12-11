@@ -86,13 +86,16 @@ a:hover {
                             Global
 =======================================================================================================*/
 
-* {
-    outline: none !important;
-    box-shadow: none;
+/* Global Link Styles */
+a {
+    color: #002366; /* Navy blue for all links */
+    text-decoration: none;
 }
 
-a {
-    color: rgb(32, 178, 170);
+a:hover {
+    color: #000; /* Optional: Change hover color to black */
+}
+}
 }
 
 a:hover {
