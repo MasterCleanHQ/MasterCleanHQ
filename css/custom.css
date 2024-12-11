@@ -76,6 +76,23 @@ a:hover {
     color: var(--accent-color); /* Orange */
 }
 
+.navbar-white .navbar-nav > li > a {
+    color: #fff; /* White */
+    transition: color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.navbar-white .navbar-brand {
+    color: #fff; /* White */
+}
+
+/* Navbar menu links after scrolling */
+.navbar-scrolled .navbar-nav > li > a {
+    color: #ff6700; /* Orange */
+}
+
+.navbar-scrolled .navbar-brand {
+    color: #ff6700; /* Orange */
+}
 /*======================================================================================================
                             Button Styles
 =======================================================================================================*/
