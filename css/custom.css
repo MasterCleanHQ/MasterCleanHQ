@@ -1,7 +1,27 @@
-/* New Navy Blue and Orange Color Scheme */
 :root {
     --primary-color: #00274d; /* Navy Blue */
     --accent-color: #ff6700; /* Orange */
+}
+
+/* Navbar Links */
+.navbar-default .navbar-nav>li>a {
+    color: var(--primary-color); /* Navy Blue */
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: var(--accent-color); /* Orange */
+}
+
+/* Navbar Brand */
+.navbar-default .navbar-brand {
+    color: var(--primary-color); /* Navy Blue */
+    font-size: 26px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: var(--accent-color); /* Orange */
 }
 
 /* Navbar Styles */
