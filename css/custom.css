@@ -263,10 +263,10 @@ iframe {
     background-position: center;
     background-size: cover;
 }
-#overlay-1
-{
-    background-color: rgba(40, 40, 40, 0.6);
+#overlay-1 {
+    background-color: rgba(0, 39, 77, 0.6); /* Navy Blue Tint */
     position: relative;
+}
 }
 
 .starting-text
