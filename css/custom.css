@@ -57,37 +57,30 @@ a:hover {
     border: none;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: #fff; /* White */
     font-size: 16px;
+    transition: color 0.5s ease-out; /* Smooth transition */
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
     color: var(--accent-color); /* Orange */
 }
 
 .navbar-default .navbar-brand {
     color: #fff; /* White */
     font-size: 26px;
+    transition: color 0.5s ease-out; /* Smooth transition */
 }
 
 .navbar-default .navbar-brand:hover {
     color: var(--accent-color); /* Orange */
 }
 
-.navbar-white .navbar-nav > li > a {
-    color: #fff; /* White */
-    transition: color 0.3s ease-in-out; /* Smooth transition effect */
-}
-
+.navbar-white .navbar-nav > li > a,
 .navbar-white .navbar-brand {
     color: #fff; /* White */
-}
-
-/* Navbar menu links after scrolling */
-.navbar-scrolled .navbar-nav > li > a {
-    color: #ff6700; /* Orange */
 }
 
 .navbar-scrolled {
@@ -95,13 +88,9 @@ a:hover {
     transition: background-color 0.5s ease-out; /* Smooth transition */
 }
 
-.navbar-scrolled .navbar-nav > li > a {
-    color: var(--accent-color); /* Orange links */
-    transition: color 0.5s ease-out; /* Smooth transition */
-}
-
+.navbar-scrolled .navbar-nav > li > a,
 .navbar-scrolled .navbar-brand {
-    color: var(--accent-color); /* Orange brand */
+    color: var(--accent-color); /* Orange */
     transition: color 0.5s ease-out; /* Smooth transition */
 }
 /*======================================================================================================
