@@ -190,6 +190,7 @@ li a
     padding-top: 10px;
 }
 #heading-text h3 {
+    color: #002366; /* Navy blue for section headings */
     font-size: 49px;
     font-family: 'Roboto', sans-serif;
     padding-top: 58px;
