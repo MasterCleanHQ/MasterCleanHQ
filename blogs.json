@@ -10,5 +10,11 @@
     "description": "Check out our latest insights...",
     "image": "img/blog2.jpg",
     "url": "Blog-2.html"
+  },
+  {
+    "title": "Keeping Your Business Spotless During the Winter",
+    "description": "Learn the best cleaning tips for the cold season.",
+    "image": "img/blog3.jpg",
+    "url": "Blog-3.html"
   }
 ]
