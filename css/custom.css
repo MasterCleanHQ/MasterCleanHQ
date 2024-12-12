@@ -78,7 +78,7 @@ a:hover {
 
 /* Base nav link styles */
 .navbar-default .navbar-nav > li > a {
-    font-size: 30px;
+    font-size: 30px; !important;
     transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
     margin: 5px 20px;
     padding: 0;
