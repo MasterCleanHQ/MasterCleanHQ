@@ -120,4 +120,49 @@ $(document).ready(function() {
 // Navbar Scroll Behavior
 ///////////////////////////////
 $(document).ready(function() {
-    var navbar = $('#navigation > .
+    var navbar = $('#navigation > .navbar'); 
+    var scrollOffset = 850;
+
+    function handleScroll() {
+        if ($(window).scrollTop() > scrollOffset) {
+            navbar.removeClass('navbar-white');
+            navbar.addClass('navbar-scrolled');
+        } else {
+            navbar.removeClass('navbar-scrolled');
+            navbar.addClass('navbar-white');
+        }
+    }
+
+    $(window).on('scroll', handleScroll);
+    handleScroll();
+});
+
+///////////////////////////////
+// Fetch Blogs from JSON
+///////////////////////////////
+$(document).ready(function() {
+    fetch('blogs.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const blogCarousel = $('#blog-carousel');
+            data.forEach(blog => {
+                const blogCard = `
+                    <div class="item blog-card">
+                        <div class="card text-center">
+                            <img src="${blog.image}" class="img-responsive" alt="${blog.title}">
+                            <h4>${blog.title}</h4>
+                            <p>${blog.excerpt}</p>
+                            <a href="${blog.link}" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                `;
+                blogCarousel.trigger('add.owl.carousel', [$(blogCard)]).trigger('refresh.owl.carousel');
+            });
+        })
+        .catch(error => console.error('Error fetching blogs:', error));
+});
