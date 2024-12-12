@@ -941,15 +941,20 @@ form
 
 .btn-primary {
     color: #fff;
-    background-color: #3acab1;
+    background-color: #ff6700; /* Orange */
     border-radius: 0;
-    border-color: #3acab1;
+    border-color: #ff6700; /* Orange */
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #16a085;
-    border-color: #16a085;
+    background-color: #e55d00; /* Darker orange for hover */
+    border-color: #e55d00; /* Darker orange */
+}
 }
 
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
