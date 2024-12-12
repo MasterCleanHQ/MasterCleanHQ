@@ -614,118 +614,77 @@ hr
                                 Blog
 -------------------------------------------------------------------------------------------------------*/
 
-#blog 
-{
+/*-----------------------------------------------------------------------------------------------------
+                                Blog
+-------------------------------------------------------------------------------------------------------*/
+
+#blog {
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100%;
     font-family: 'Lora', serif;
-}
-.post 
-{
-    width: 90%;
-    margin-bottom: 15px;
-}
-.row-fluid 
-{
-    overflow: hidden;
-    padding: 25px 0px;
-    width: 100%;
-}
-#blog .post .post-thumbnail 
-{
-    overflow: visible !important;
-}
-#blog .post .post-thumbnail .frame, #blog .post .post-thumbnail .frame img 
-{
-    border-radius: 3px;
-    margin-bottom: 0;
-}
-#blog .post .post-thumbnail .frame 
-{
-    padding: 8px;
-    background: #b9b9bb;
-    position: relative;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-#blog .post .post-thumbnail .post-format 
-{
-    display: block;
-    width: 60px;
-    height: 60px;
     text-align: center;
-    border-radius: 300px;
-    -webkit-border-radius: 300px;
-    -moz-border-radius: 300px;
-    border: 5px solid #b8b8bb;
-    position: absolute;
-    top: -19px;
-    left: -20px;
-    background-color: #d9dad9;
-    z-index: 9999;
-}
-#blog .post .post-thumbnail .post-format span 
-{
-    font-size: 33px;
-    position: relative;
-    top: 2px;
-    color: rgb(32, 178, 170);
-}
-a 
-{
-    outline: none;
-    text-decoration: none;
-}
-#blog .post .post-thumbnail .post-shadow 
-{
-    margin: 0;
-    padding: 0 0 0 18px;
-}
-#blog .post-excerpt 
-{
-    margin-top: 18px;
-    padding-left: 70px;
-}
-#blog .post h2.title a {
-    color: rgb(32, 178, 170);
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 0 1px 1px #f7f7f6;
-    font-family: 'Dosis', sans-serif;
-}
-#blog .post h2.title 
-{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    font-size: 20px;
-}
-.title 
-{
-    position: relative;
-}
-.line-dotted 
-{
-    border-bottom: 1px dashed #a4a4a4;
-    box-shadow: 0 1px 1px #ffffff;
-    width: 100%;
-    clear: both;
-    margin-top: 19px;
-    margin-bottom: 23px;
 }
 
-.post-share a 
-{
-    padding: 0px 10px;
-    font-size: 18px;
+.blog-carousel {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling for the carousel */
+    scroll-snap-type: x mandatory; /* Ensure snaps while scrolling */
+    gap: 20px;
+    padding: 10px;
 }
- #blog .post .post-share p 
-{
-    font-weight: bold;
-    float: left;
-    margin-right: 10px;
+
+.blog-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner design */
 }
+
+.blog-card {
+    flex: 0 0 300px; /* Set the size of each blog card */
+    scroll-snap-align: start; /* Snap to each blog card */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    text-align: left;
+}
+
+.blog-card img {
+    width: 100%; /* Ensure the image fits the card width */
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Crop the image if needed */
+}
+
+.blog-card h2 {
+    font-size: 22px;
+    color: #00274d; /* Navy blue */
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 10px 10px 10px;
+}
+
+.blog-card a.read-more {
+    display: block;
+    margin: 10px;
+    text-align: center;
+    background-color: #ff6700; /* Orange */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.blog-card a.read-more:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+}
+
 /*---------------------------------------------------------------------------------------------------
                 client
 ----------------------------------------------------------------------------------------------------*/
