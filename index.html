@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Master Commercial Clean Blog">
-  <meta name="keywords" content="San Angelo commercial cleaning, cleaning tips, Master Commercial Clean blog">
+  <meta name="description" content="Master Commercial Clean offers reliable and affordable commercial cleaning services in San Angelo, TX. Your trusted partner in maintaining a clean business environment.">
+  <meta name="keywords" content="San Angelo commercial cleaning, office cleaning San Angelo, janitorial services TX, Master Commercial Clean, cleaning business San Angelo TX">
   <meta name="author" content="Master Commercial Clean">
   <meta name="robots" content="index, follow">
-  <title>Blog Post | Master Commercial Clean</title>
+  <title>Commercial Cleaning Services in San Angelo, TX | Master Commercial Clean</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/owl.transitions.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/custom.css">
 
@@ -39,15 +40,15 @@
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                 <span class="ion-navicon"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Master Commercial Clean</a>
+              <a class="navbar-brand" href="#">Master Commercial Clean</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#our_service">Services</a></li>
-                <li><a href="index.html#testimonial">Testimonials</a></li>
-                <li><a href="index.html#contact">Contact Us</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#our_service">Services</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#blog">Blog</a></li>
               </ul>
             </div>
           </div>
@@ -57,8 +58,9 @@
       <!-- Hero Section -->
       <section id="starting">
         <div class="text-center starting-text">
-          <h1 id="blog-title" class="rene"></h1>
-          <img id="blog-image" class="img-responsive center-block" src="" alt="">
+          <h1 class="rene">Master Commercial Clean</h1>
+          <h2>Professional Commercial Cleaning Services Tailored for Your Business Needs in San Angelo, Tx</h2>
+          <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
         </div>
       </section>
       <div id="bottom" class="bottom text-center">
@@ -90,85 +92,20 @@
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="our_service">
+    <!-- Blog Section -->
+    <section id="blog">
       <div class="container">
         <div class="row text-center" id="heading">
           <div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
-            <h3>What We Do</h3>
-            <p>Reliable and Professional Cleaning Services</p>
+            <h3>Our Blog</h3>
+            <p>Latest Insights & Updates</p>
             <hr class="full">
             <br />
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4 service">
-            <div class="service-icon text-center">
-              <i class="fa fa-building fa-5x"></i>
-            </div>
-            <div class="about-service">
-              <h3 class="text-center">Commercial Cleaning</h3>
-              <p class="text-center">We provide detailed cleaning services for offices, retail stores, and more in San Angelo, TX.</p>
-            </div>
-          </div>
-          <div class="col-sm-4 service">
-            <div class="service-icon text-center">
-              <i class="fa fa-hard-hat fa-5x"></i>
-            </div>
-            <div class="about-service">
-              <h3 class="text-center">Post-Construction Cleaning</h3>
-              <p class="text-center">We handle debris removal and deep cleaning for newly built or renovated spaces.</p>
-            </div>
-          </div>
-          <div class="col-sm-4 service">
-            <div class="service-icon text-center">
-              <i class="fa fa-star fa-5x"></i>
-            </div>
-            <div class="about-service">
-              <h3 class="text-center">Specialized Cleaning</h3>
-              <p class="text-center">Custom cleaning services tailored to your business's unique needs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Blog Content Section -->
-    <section id="blog-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div id="blog-body"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonial">
-      <div class="container">
-        <div class="row text-center" id="heading">
-          <div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
-            <h3>Client Reviews</h3>
-            <p>What Our Satisfied Clients Are Saying</p>
-            <hr class="full">
-            <br />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <p>"Master Commercial Clean transformed our office! Highly recommend!"</p>
-            <p><strong>- Alex J</strong></p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p>"Exceptional service. Highly professional."</p>
-            <p><strong>- Sebastian L.</strong></p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p>"MCC provided great ongoing construction cleanup. They handled the cleaning without disrupting my crew."</p>
-            <p><strong>- Ray C.</strong></p>
-          </div>
-        </div>
+        <!-- Dynamic Blog Content -->
+        <div id="blog-content" class="row"></div>
       </div>
     </section>
 
@@ -208,29 +145,37 @@
 
   <!-- JS for Blog Loading -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const blogId = urlParams.get('blog');
-
+    $(document).ready(function () {
+      // Fetch blogs from blogs.json
       fetch('blogs.json')
         .then(response => response.json())
         .then(blogs => {
-          const blog = blogs.find(b => b.url === blogId);
-
-          if (blog) {
-            document.getElementById('blog-title').textContent = blog.title;
-            document.getElementById('blog-image').src = blog.image;
-            document.getElementById('blog-image').alt = blog.title;
-            document.getElementById('blog-body').innerHTML = blog.content;
+          const blogContainer = $('#blog-content');
+          if (blogs.length === 0) {
+            blogContainer.append('<p>No blogs available at the moment.</p>');
           } else {
-            document.body.innerHTML = '<h1>Blog Not Found</h1>';
+            blogs.forEach(blog => {
+              blogContainer.append(
+                <div class="col-md-4 blog-card">
+                  <div class="card text-center">
+                    <img src="${blog.image}" class="img-responsive" alt="${blog.title}">
+                    <h4>${blog.title}</h4>
+                    <p>${blog.description}</p>
+                    <a href="${blog.url}" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              );
+            });
           }
         })
         .catch(error => {
-          console.error('Error loading blog:', error);
-          document.body.innerHTML = '<h1>Error loading blog. Please try again later.</h1>';
+          console.error('Error fetching blogs:', error);
+          $('#blog-content').append('<p>Failed to load blogs. Please try again later.</p>');
         });
     });
+  </script>
+</body>
+</html>
   </script>
 </body>
 </html>
