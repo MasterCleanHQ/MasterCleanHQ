@@ -140,7 +140,48 @@ $(document).ready(function() {
 ///////////////////////////////
 // Fetch Blogs from JSON
 ///////////////////////////////
-$(document).ready(function() {
+$(document).ready(function () {
+    // Initialize the Owl Carousel
+    const blogCarousel = $('#blog-carousel');
+    blogCarousel.owlCarousel({
+        items: 3,
+        margin: 30,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='ion-ios7-arrow-left'></i>", "<i class='ion-ios7-arrow-right'></i>"],
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+    });
+
+///////////////////////////////
+// Fetch Blogs from JSON
+///////////////////////////////
+$(document).ready(function () {
+    // Initialize the Owl Carousel
+    const blogCarousel = $('#blog-carousel');
+    blogCarousel.owlCarousel({
+        items: 3,
+        margin: 30,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='ion-ios7-arrow-left'></i>", "<i class='ion-ios7-arrow-right'></i>"],
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+    });
+
+    // Fetch the blogs from blogs.json
     fetch('blogs.json')
         .then(response => {
             if (!response.ok) {
@@ -149,20 +190,25 @@ $(document).ready(function() {
             return response.json();
         })
         .then(data => {
-            const blogCarousel = $('#blog-carousel');
             data.forEach(blog => {
+                // Create the blog card
                 const blogCard = `
                     <div class="item blog-card">
                         <div class="card text-center">
                             <img src="${blog.image}" class="img-responsive" alt="${blog.title}">
                             <h4>${blog.title}</h4>
-                            <p>${blog.excerpt}</p>
-                            <a href="${blog.link}" class="btn btn-primary">Read More</a>
+                            <p>${blog.description}</p>
+                            <a href="${blog.url}" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 `;
+
+                // Add the blog card to the carousel
                 blogCarousel.trigger('add.owl.carousel', [$(blogCard)]).trigger('refresh.owl.carousel');
             });
         })
-        .catch(error => console.error('Error fetching blogs:', error));
+        .catch(error => {
+            console.error('Error fetching blogs:', error);
+            $('#blog-content').append('<p>Failed to load blogs. Please try again later.</p>');
+        });
 });
