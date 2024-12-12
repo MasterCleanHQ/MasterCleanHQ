@@ -81,7 +81,7 @@ $(document).ready(function() {
     ///////////////////////////////
     $('#client-speech').owlCarousel({
         autoPlay: 3000,
-        navigation: false, // Show next and prev buttons
+        navigation: false,
         slideSpeed: 700,
         paginationSpeed: 1000,
         singleItem: true
@@ -91,18 +91,18 @@ $(document).ready(function() {
     // Initialize Owl Carousel for Blog
     ///////////////////////////////
     $('#blog-carousel').owlCarousel({
-        items: 3, // Number of items to show
+        items: 3,
         margin: 30,
         loop: true,
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         nav: true,
-        navText: ["<i class='ion-ios7-arrow-left'></i>","<i class='ion-ios7-arrow-right'></i>"],
+        navText: ["<i class='ion-ios7-arrow-left'></i>", "<i class='ion-ios7-arrow-right'></i>"],
         responsive: {
-            0: { items:1 },    // On small screens show 1 item
-            600:{ items:2 },  // On tablets show 2 items
-            1000:{ items:3 }  // On desktops show 3 items
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
         }
     });
 
@@ -120,19 +120,4 @@ $(document).ready(function() {
 // Navbar Scroll Behavior
 ///////////////////////////////
 $(document).ready(function() {
-    var navbar = $('#navigation > .navbar'); 
-    var scrollOffset = 850; // Change offset as desired
-
-    function handleScroll() {
-        if ($(window).scrollTop() > scrollOffset) {
-            navbar.removeClass('navbar-white');
-            navbar.addClass('navbar-scrolled');
-        } else {
-            navbar.removeClass('navbar-scrolled');
-            navbar.addClass('navbar-white');
-        }
-    }
-
-    $(window).on('scroll', handleScroll);
-    handleScroll();
-});
+    var navbar = $('#navigation > .
