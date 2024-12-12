@@ -1,0 +1,16 @@
+[
+  {
+    "id": "blog-1",
+    "title": "San Angelo Offices Can Benefit From A Great Clean!",
+    "date": "December 11, 2024",
+    "image": "img/blog1.jpg",
+    "content": "<p>Here is the detailed content of Blog 1...</p>"
+  },
+  {
+    "id": "blog-2",
+    "title": "5 Tips to Keep Your Office Sparkling Clean",
+    "date": "December 12, 2024",
+    "image": "img/blog2.jpg",
+    "content": "<p>Here are some essential tips to maintain cleanliness...</p>"
+  }
+]
