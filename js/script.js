@@ -1,7 +1,6 @@
 ///////////////////////////////
 // Smart Resize
 ///////////////////////////////
-
 (function($, sr) {
     var debounce = function(func, threshold, execAsap) {
         var timeout;
@@ -32,11 +31,10 @@ $(function() {
         var homeHeight = $(window).height();
         $('#overlay-1').height(homeHeight);
     };
-
     setHomeBannerHeight();
 
     ///////////////////////////////
-    // One page Smooth Scrolling
+    // One Page Smooth Scrolling
     ///////////////////////////////
     $('a[href*=#]:not([href=#])').click(function() {
         if (
@@ -46,12 +44,7 @@ $(function() {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
-                $('html,body').animate(
-                    {
-                        scrollTop: target.offset().top
-                    },
-                    1000
-                );
+                $('html,body').animate({ scrollTop: target.offset().top }, 1000);
                 return false;
             }
         }
@@ -69,7 +62,6 @@ $(function() {
         bannerText.css('padding-top', bannerTextTop + 'px');
         bannerText.show();
     }
-
     centerHomeBannerText();
 
     jQuery(window).smartresize(function() {
@@ -80,12 +72,12 @@ $(function() {
 
 $(document).ready(function() {
     ///////////////////////////////
-    // Initialize WOW.js for animations
+    // Initialize WOW.js
     ///////////////////////////////
     new WOW().init();
 
     ///////////////////////////////
-    // Initialize Owl Carousel
+    // Initialize Owl Carousel for Testimonials
     ///////////////////////////////
     $('#client-speech').owlCarousel({
         autoPlay: 3000,
@@ -95,27 +87,25 @@ $(document).ready(function() {
         singleItem: true
     });
 
-$(document).ready(function() {
-  // Other initializations...
+    ///////////////////////////////
+    // Initialize Owl Carousel for Blog
+    ///////////////////////////////
+    $('#blog-carousel').owlCarousel({
+        items: 3, // Number of items to show
+        margin: 30,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='ion-ios7-arrow-left'></i>","<i class='ion-ios7-arrow-right'></i>"],
+        responsive: {
+            0: { items:1 },    // On small screens show 1 item
+            600:{ items:2 },  // On tablets show 2 items
+            1000:{ items:3 }  // On desktops show 3 items
+        }
+    });
 
-  // Initialize the Blog Carousel
-  $('#blog-carousel').owlCarousel({
-    items: 3, // Number of items to show
-    margin: 30,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    nav: true,
-    navText: ["<i class='ion-ios7-arrow-left'></i>","<i class='ion-ios7-arrow-right'></i>"],
-    responsive:{
-      0:{ items:1 },    // On small screens show 1 item
-      600:{ items:2 },  // On tablets show 2 items
-      1000:{ items:3 }  // On desktops show 3 items
-    }
-  });
-});
-    
     ///////////////////////////////
     // Fix Home Banner Height on Resize
     ///////////////////////////////
@@ -131,7 +121,7 @@ $(document).ready(function() {
 ///////////////////////////////
 $(document).ready(function() {
     var navbar = $('#navigation > .navbar'); 
-    var scrollOffset = 850; // Change offset as needed
+    var scrollOffset = 850; // Change offset as desired
 
     function handleScroll() {
         if ($(window).scrollTop() > scrollOffset) {
