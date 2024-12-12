@@ -95,6 +95,27 @@ $(document).ready(function() {
         singleItem: true
     });
 
+$(document).ready(function() {
+  // Other initializations...
+
+  // Initialize the Blog Carousel
+  $('#blog-carousel').owlCarousel({
+    items: 3, // Number of items to show
+    margin: 30,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    nav: true,
+    navText: ["<i class='ion-ios7-arrow-left'></i>","<i class='ion-ios7-arrow-right'></i>"],
+    responsive:{
+      0:{ items:1 },    // On small screens show 1 item
+      600:{ items:2 },  // On tablets show 2 items
+      1000:{ items:3 }  // On desktops show 3 items
+    }
+  });
+});
+    
     ///////////////////////////////
     // Fix Home Banner Height on Resize
     ///////////////////////////////
