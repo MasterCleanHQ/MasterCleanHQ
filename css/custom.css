@@ -50,6 +50,10 @@ a:hover {
 /*======================================================================================================
                             Navbar Styles
 =======================================================================================================*/
+:root {
+    --primary-color: #00274d; /* Navy Blue */
+    --accent-color: #ff6700; /* Orange */
+
 /* Make navbar transparent and white text at the top */
 .navbar-default {
     background-color: rgba(0,0,0,0.0);
