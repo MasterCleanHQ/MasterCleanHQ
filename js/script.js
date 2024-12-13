@@ -120,21 +120,19 @@ $(document).ready(function() {
 // Navbar Scroll Behavior
 ///////////////////////////////
 $(document).ready(function() {
-    var navbar = $('#navigation > .navbar'); 
-    var scrollOffset = 850;
+    var navbar = $('.navbar'); 
+    var scrollOffset = 100; // Adjust this value as needed (e.g., 100px)
 
     function handleScroll() {
         if ($(window).scrollTop() > scrollOffset) {
-            navbar.removeClass('navbar-white');
-            navbar.addClass('navbar-scrolled');
+            navbar.removeClass('navbar-white').addClass('navbar-scrolled');
         } else {
-            navbar.removeClass('navbar-scrolled');
-            navbar.addClass('navbar-white');
+            navbar.removeClass('navbar-scrolled').addClass('navbar-white');
         }
     }
 
     $(window).on('scroll', handleScroll);
-    handleScroll();
+    handleScroll(); // Initialize on page load
 });
 
 ///////////////////////////////
