@@ -50,55 +50,61 @@ a:hover {
 /*======================================================================================================
                             Navbar Styles
 =======================================================================================================*/
+/*======================================================================================================
+                                        Navbar Styles
+=======================================================================================================*/
+
+/* Color Variables */
 :root {
     --primary-color: #00274d; /* Navy Blue */
-    --accent-color: #ff6700; /* Orange */
+    --accent-color: #ff6700;  /* Orange */
 }
-/* Make navbar transparent and white text at the top */
+
+/* Navbar Base Styles */
 .navbar-default {
-    background-color: rgba(0,0,0,0.0);
+    background-color: rgba(0, 0, 0, 0); /* Transparent */
     border: none;
+    transition: background-color 0.5s ease-out;
 }
 
-.navbar-white {
-    background-color: rgba(0,0,0,0); /* transparent */
-}
-
+/* White Text for Transparent Navbar */
 .navbar-white .navbar-nav > li > a,
 .navbar-white .navbar-brand {
-    color: #fff !important;
+    color: #fff !important; /* White Text */
+    transition: color 0.5s ease-out;
 }
 
-/* Scrolled state: navy background and orange text */
+/* Scrolled Navbar Styles */
 .navbar-scrolled {
-    background-color: var(--primary-color) !important;
-    transition: background 0.5s ease-out;
+    background-color: var(--primary-color) !important; /* Solid Navy Background */
+    transition: background-color 0.5s ease-out;
 }
 
 .navbar-scrolled .navbar-nav > li > a,
 .navbar-scrolled .navbar-brand {
-    color: var(--accent-color) !important;
+    color: var(--accent-color) !important; /* Orange Text */
+    transition: color 0.5s ease-out;
 }
 
-/* Base nav link styles */
+/* Navbar Link Styles */
 .navbar-default .navbar-nav > li > a {
-    font-size: 20px; !important;
-    transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
+    font-size: 20px !important;
+    transition: color 0.5s ease-out;
     margin: 5px 20px;
     padding: 0;
     line-height: 28px;
-    font-family: "Coda";
+    font-family: "Coda", sans-serif;
     text-transform: capitalize;
-    color: #E5E5E5;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #fff;
+    color: #fff; /* White on Hover */
 }
 
+/* Navbar Brand Styles */
 .navbar-default .navbar-brand {
-    font-family: "Coda";  
+    font-family: "Coda", sans-serif;  
     padding: 5px 15px;  
     font-size: 26px;  
     line-height: 100%;  
@@ -107,76 +113,29 @@ a:hover {
     transition: color 0.5s ease-out;
 }
 
-.nav-wrap {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+/* Additional Navbar Adjustments */
+
+/* Adjust Navbar Padding for Better Spacing */
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#wrapper {
-    background: url(../img/background.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-#overlay-1 {
-    #overlay-1 {
-    background-color: rgba(0, 39, 77, 0.6); /* Navy Blue Tint */
-    position: relative;
-    height: 100vh; /* Ensure it spans the full viewport height */
-}
-}
-
-.starting-text {
-    padding: 177px 0px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #000;
-    letter-spacing: 2px;
-}
-
-.rene {
-    font-size: 120px;
-    color: white;
-    font-family: "omnes-pro", "Helvetica", sans-serif;
-    font-weight: 300;
-    margin-top: 75px;
-}
-
-.starting-text h2 {
-    font-family: "omnes-pro", "Helvetica", sans-serif;
-    color: #fff;
-}
-
-.bottom {
-    width: 100%;
-    position: absolute;
-    bottom: 2%;
-}
-
-.bottom a {
-    color: rgba(192, 192, 192, 0.5);
-}
-
-/* Other sections, buttons, headings, etc. remain as provided */
-
-.btn-primary {
+/* Optional: Adjust Dropdown Menu Styles if Applicable */
+.navbar-default .navbar-nav > li > .dropdown-menu {
     background-color: var(--primary-color);
-    border-color: var(--primary-color);
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
     color: #fff;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    color: #fff;
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: var(--accent-color);
+    background-color: rgba(255, 103, 0, 0.1); /* Light Orange Hover Background */
 }
 
-/* Footer and other styles remain unchanged from your provided code */
-
-/* Keep all your original CSS below this line as needed */
 /*======================================================================================================
                             Heading Styles
 =======================================================================================================*/
