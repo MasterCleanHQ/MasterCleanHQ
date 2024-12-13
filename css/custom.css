@@ -66,8 +66,10 @@ a:hover {
 
 /* White Text for Transparent Navbar */
 .navbar-white .navbar-nav > li > a,
-.navbar-white .navbar-brand {
+.navbar-white .navbar-brand,
+.navbar-phone {
     color: #fff !important; /* White Text */
+    font-family: "Coda", sans-serif; /* Consistent Font */
     transition: color 0.5s ease-out;
 }
 
@@ -78,7 +80,8 @@ a:hover {
 }
 
 .navbar-scrolled .navbar-nav > li > a,
-.navbar-scrolled .navbar-brand {
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .navbar-phone {
     color: var(--accent-color) !important; /* Orange Text */
     transition: color 0.5s ease-out;
 }
@@ -90,7 +93,6 @@ a:hover {
     margin: 5px 20px;
     padding: 0;
     line-height: 28px;
-    font-family: "Coda", sans-serif;
     text-transform: capitalize;
 }
 
@@ -101,12 +103,10 @@ a:hover {
 
 /* Navbar Brand Styles */
 .navbar-default .navbar-brand {
-    font-family: "Coda", sans-serif;  
     padding: 5px 15px;  
     font-size: 26px;  
     line-height: 100%;  
     height: auto;
-    color: #fff;
     transition: color 0.5s ease-out;
 }
 
@@ -138,12 +138,13 @@ a:hover {
   margin-left: 15px; /* Space between brand name and phone number */
   display: inline-block;
   vertical-align: middle;
+  font-family: "Coda", sans-serif; /* Consistent Font */
   transition: color 0.3s, background-color 0.3s;
 }
 
 .navbar-phone:hover {
-  color: #ff6600; /* Accent color on hover */
-  background-color: rgba(255, 102, 0, 0.1); /* Light background on hover */
+  color: var(--accent-color); /* Accent color on hover */
+  background-color: rgba(255, 103, 0, 0.1); /* Light background on hover */
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
@@ -156,7 +157,72 @@ a:hover {
     margin-left: 0;
     margin-top: 10px;
     text-align: center;
+    font-size: 18px; /* Slightly larger for readability */
   }
+}
+
+/* Main Content Styles */
+main {
+  padding-top: 80px; /* Adjust based on navbar height */
+  z-index: 1;
+  position: relative;
+  background-color: #333; /* Example background to contrast white text */
+  color: #fff; /* Default text color */
+  min-height: 100vh; /* Ensure it takes up full viewport height */
+}
+
+/* Styling for Main Title */
+main h1 {
+  font-size: 48px; /* Adjust size as needed */
+  color: #fff; /* White color */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for Subtitle */
+main p.subtitle {
+  font-size: 24px; /* Smaller than h1 but prominent */
+  color: #fff; /* White color */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Footer Styling */
+#footer, .main-footer {
+  background-color: #222; /* Dark background */
+  color: #fff;
+  padding: 20px 0;
+  font-family: "Coda", sans-serif; /* Consistent Font */
+}
+
+#footer a, .main-footer a {
+  color: var(--accent-color); /* Accent color for links */
+  text-decoration: none;
+}
+
+#footer a:hover, .main-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Optional: Flexbox for Sticky Footer */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+#footer {
+  text-align: center;
 }
 
 /*======================================================================================================
