@@ -121,13 +121,17 @@ $(document).ready(function() {
 ///////////////////////////////
 $(document).ready(function() {
     var navbar = $('.navbar'); 
-    var scrollOffset = 850; // Adjust this value as needed (e.g., 100px)
+    var scrollOffset = 100; // Adjusted scroll offset (e.g., 100px)
 
     function handleScroll() {
-        if ($(window).scrollTop() > scrollOffset) {
+        var currentScroll = $(window).scrollTop();
+        console.log("Current Scroll Position:", currentScroll);
+        if (currentScroll > scrollOffset) {
             navbar.removeClass('navbar-white').addClass('navbar-scrolled');
+            console.log("Applied 'navbar-scrolled' class.");
         } else {
             navbar.removeClass('navbar-scrolled').addClass('navbar-white');
+            console.log("Applied 'navbar-white' class.");
         }
     }
 
@@ -157,30 +161,8 @@ $(document).ready(function () {
         }
     });
 
-///////////////////////////////
-// Fetch Blogs from JSON
-///////////////////////////////
-$(document).ready(function () {
-    // Initialize the Owl Carousel
-    const blogCarousel = $('#blog-carousel');
-    blogCarousel.owlCarousel({
-        items: 3,
-        margin: 30,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        nav: true,
-        navText: ["<i class='ion-ios7-arrow-left'></i>", "<i class='ion-ios7-arrow-right'></i>"],
-        responsive: {
-            0: { items: 1 },
-            600: { items: 2 },
-            1000: { items: 3 }
-        }
-    });
-
-    // Fetch the blogs from blogs.json
-    fetch('blogs.json')
+    // Fetch the blogs from blogs.json using absolute path
+    fetch('/blogs.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
