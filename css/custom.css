@@ -62,7 +62,7 @@ a:hover {
 .navbar-white .navbar-nav > li > a,
 .navbar-white .navbar-brand,
 .navbar-phone {
-    color: var(--primary-color) !important; /* Navy Blue Text */
+    color: #fff !important; /* White Text */
     font-family: "Coda", sans-serif; /* Consistent Font */
     transition: color 0.5s ease-out;
 }
