@@ -58,11 +58,11 @@ a:hover {
     transition: background-color 0.5s ease-out;
 }
 
-/* White Text for Transparent Navbar */
+/* Navy Blue Text for Transparent Navbar */
 .navbar-white .navbar-nav > li > a,
 .navbar-white .navbar-brand,
 .navbar-phone {
-    color: #fff !important; /* White Text */
+    color: ##00274d !important; /* Navy Blue Text */
     font-family: "Coda", sans-serif; /* Consistent Font */
     transition: color 0.5s ease-out;
 }
