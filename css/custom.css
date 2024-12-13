@@ -1,14 +1,14 @@
 /* Import Fonts (must be at the top) */
 @import url(omnes-pro.css);
-@import url(http://fonts.googleapis.com/css?family=Coda);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
+@import url('https://fonts.googleapis.com/css?family=Coda');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600');
 
 /* Color Variables */
 :root {
     --primary-color: #00274d; /* Navy Blue */
-    --accent-color: #ff6700; /* Orange */
+    --accent-color: #ff6700;  /* Orange */
 }
 
 /*======================================================================================================
@@ -48,7 +48,7 @@ a:hover {
 }
 
 /*======================================================================================================
-                                        Navbar Styles
+                            Navbar Styles
 =======================================================================================================*/
 
 /* Navbar Base Styles */
@@ -62,7 +62,7 @@ a:hover {
 .navbar-white .navbar-nav > li > a,
 .navbar-white .navbar-brand,
 .navbar-phone {
-    color: var(--accent-color) !important; /* Navy Blue Text */
+    color: var(--primary-color) !important; /* Navy Blue Text */
     font-family: "Coda", sans-serif; /* Consistent Font */
     transition: color 0.5s ease-out;
 }
@@ -127,101 +127,105 @@ a:hover {
 
 /* Phone Number Styling in Navbar */
 .navbar-phone {
-  color: #fff; /* White color to match navbar text */
-  font-size: 16px; /* Adjust font size as needed */
-  margin-left: 15px; /* Space between brand name and phone number */
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "Coda", sans-serif; /* Consistent Font */
-  transition: color 0.3s, background-color 0.3s;
+    color: #fff; /* White color to match navbar text */
+    font-size: 16px; /* Adjust font size as needed */
+    margin-left: 15px; /* Space between brand name and phone number */
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Coda", sans-serif; /* Consistent Font */
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .navbar-phone:hover {
-  color: var(--accent-color); /* Accent color on hover */
-  background-color: rgba(255, 103, 0, 0.1); /* Light background on hover */
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5px;
+    color: var(--accent-color); /* Accent color on hover */
+    background-color: rgba(255, 103, 0, 0.1); /* Light background on hover */
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Responsive Styling for Phone Number */
 @media (max-width: 767px) {
-  .navbar-phone {
-    display: block;
-    margin-left: 0;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 18px; /* Slightly larger for readability */
-  }
+    .navbar-phone {
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 18px; /* Slightly larger for readability */
+    }
 }
+
+/*======================================================================================================
+                            Main Content Styles
+=======================================================================================================*/
 
 /* Main Content Styles */
 main {
-  padding-top: 80px; /* Adjust based on navbar height */
-  z-index: 1;
-  position: relative;
-  background-color: #fff; /* Example background to contrast white text */
-  color: #00274d; /* Default text color */
-  min-height: 100vh; /* Ensure it takes up full viewport height */
+    padding-top: 80px; /* Adjust based on navbar height */
+    z-index: 1;
+    position: relative;
+    background-color: #fff; /* White background */
+    color: var(--primary-color); /* Navy Blue for default text */
+    min-height: 100vh; /* Ensure it takes up full viewport height */
 }
 
 /* Styling for Main Title */
 main h1 {
-  font-size: 48px; /* Adjust size as needed */
-  color: #00274d; /* Navy Blue color */
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 48px; /* Adjust size as needed */
+    color: var(--primary-color); /* Navy Blue */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Styling for Subtitle */
 main p.subtitle {
-  font-size: 24px; /* Smaller than h1 but prominent */
-  color: #00274d; /* Navy Blue Color */
-  text-align: center;
-  margin-bottom: 40px;
+    font-size: 24px; /* Smaller than h1 but prominent */
+    color: var(--primary-color); /* Navy Blue */
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 /* Footer Styling */
 #footer, .main-footer {
-  background-color: #222; /* Dark background */
-  color: #fff;
-  padding: 20px 0;
-  font-family: "Coda", sans-serif; /* Consistent Font */
+    background-color: #222; /* Dark background */
+    color: #fff;
+    padding: 20px 0;
+    font-family: "Coda", sans-serif; /* Consistent Font */
 }
 
 #footer a, .main-footer a {
-  color: var(--accent-color); /* Accent color for links */
-  text-decoration: none;
+    color: var(--accent-color); /* Accent color for links */
+    text-decoration: none;
 }
 
 #footer a:hover, .main-footer a:hover {
-  color: #fff;
-  text-decoration: underline;
+    color: #fff;
+    text-decoration: underline;
 }
 
 /* Optional: Flexbox for Sticky Footer */
 body, html {
-  height: 100%;
-  margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
 #wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-  flex: 1;
+    flex: 1;
 }
 
 #footer {
-  text-align: center;
+    text-align: center;
 }
 
 /*======================================================================================================
-                                Additional Styles for Blog Pages
-======================================================================================================*/
+                        Additional Styles for Blog Pages
+=======================================================================================================*/
 
 /* Blog Content Padding */
 .blog-content {
@@ -253,6 +257,7 @@ main {
         margin: 10px auto;    /* Further adjust spacing for smaller screens */
     }
 }
+
 /*======================================================================================================
                             Heading Styles
 =======================================================================================================*/
