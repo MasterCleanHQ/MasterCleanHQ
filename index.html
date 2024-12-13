@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/custom.css">
 
-  <!-- Custom CSS for Phone Number Styling -->
+  <!-- Custom CSS for Styling -->
   <style>
     /* Phone Number Styling in Navbar */
     .phone-number a {
@@ -41,6 +41,65 @@
     /* Ensure Main Content is Visible Below Fixed Navbar */
     #main-content {
       padding-top: 80px; /* Adjust based on navbar height */
+      z-index: 1;
+      position: relative;
+      background-color: #333; /* Example background to contrast white text */
+      color: #fff; /* Default text color */
+      min-height: 100vh; /* Ensure it takes up full viewport height */
+    }
+
+    /* Styling for Main Title */
+    #main-content h1 {
+      font-size: 48px; /* Adjust size as needed */
+      color: #fff; /* White color */
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Styling for Subtitle */
+    #main-content p.subtitle {
+      font-size: 24px; /* Smaller than h1 but prominent */
+      color: #fff; /* White color */
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #222; /* Dark background */
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #ff6600; /* Accent color for links */
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Optional: Ensure Footer Stays at Bottom */
+    body, html {
+      height: 100%;
+    }
+
+    #wrapper {
+      min-height: 100%;
+      position: relative;
+    }
+
+    #main-content {
+      padding-bottom: 60px; /* Footer height */
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px; /* Footer height */
     }
   </style>
 </head>
@@ -85,8 +144,9 @@
       <section id="main-content">
         <div class="container">
           <h1>Welcome to Master Commercial Clean</h1>
-          <p>Your trusted partner for commercial cleaning services in San Angelo, TX.</p>
+          <p class="subtitle">Your trusted partner for commercial cleaning services in San Angelo, TX.</p>
           <!-- Add more content here -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at convallis nulla. Donec at ligula sit amet lorem dignissim fermentum. Integer a sem vitae purus finibus consectetur.</p>
         </div>
       </section>
       
@@ -111,7 +171,6 @@
   <script src="js/script.js"></script>
 </body>
 </html>
-
       <!-- Hero Section -->
       <section id="starting">
         <div class="text-center starting-text">
