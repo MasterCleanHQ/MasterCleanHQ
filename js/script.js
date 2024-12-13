@@ -121,7 +121,7 @@ $(document).ready(function() {
 ///////////////////////////////
 $(document).ready(function() {
     var navbar = $('.navbar'); 
-    var scrollOffset = 100; // Adjust this value as needed (e.g., 100px)
+    var scrollOffset = 850; // Adjust this value as needed (e.g., 100px)
 
     function handleScroll() {
         if ($(window).scrollTop() > scrollOffset) {
