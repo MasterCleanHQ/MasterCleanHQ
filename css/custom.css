@@ -51,12 +51,6 @@ a:hover {
                                         Navbar Styles
 =======================================================================================================*/
 
-/* Color Variables */
-:root {
-    --primary-color: #00274d; /* Navy Blue */
-    --accent-color: #ff6700;  /* Orange */
-}
-
 /* Navbar Base Styles */
 .navbar-default {
     background-color: rgba(0, 0, 0, 0); /* Transparent */
