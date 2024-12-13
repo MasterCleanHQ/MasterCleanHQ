@@ -110,8 +110,6 @@ a:hover {
     transition: color 0.5s ease-out;
 }
 
-/* Additional Navbar Adjustments */
-
 /* Adjust Navbar Padding for Better Spacing */
 .navbar {
     padding-top: 10px;
@@ -132,7 +130,6 @@ a:hover {
     color: var(--accent-color);
     background-color: rgba(255, 103, 0, 0.1); /* Light Orange Hover Background */
 }
-
 /*======================================================================================================
                             Heading Styles
 =======================================================================================================*/
