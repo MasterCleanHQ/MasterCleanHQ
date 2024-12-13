@@ -135,10 +135,6 @@ a:hover {
                                 Additional Styles for Blog Pages
 ======================================================================================================*/
 
-/*======================================================================================================
-                                Additional Styles for Blog Pages
-======================================================================================================*/
-
 /* Blog Content Padding */
 .blog-content {
     padding: 80px 0 50px 0;
@@ -156,14 +152,14 @@ a:hover {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     .blog-image {
         width: 100%;          /* Image takes full width on smaller screens */
         margin: 15px auto;    /* Adjust vertical spacing as needed */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 120px) {
     .blog-image {
         width: 100%;          /* Ensure full width on very small devices */
         margin: 10px auto;    /* Further adjust spacing for smaller screens */
