@@ -168,7 +168,7 @@ main {
 /* Styling for Main Title */
 main h1 {
   font-size: 48px; /* Adjust size as needed */
-  color: #fff; /* White color */
+  color: #00274d; /* Navy Blue color */
   text-align: center;
   margin-bottom: 20px;
 }
@@ -176,7 +176,7 @@ main h1 {
 /* Styling for Subtitle */
 main p.subtitle {
   font-size: 24px; /* Smaller than h1 but prominent */
-  color: #fff; /* White color */
+  color: #00274d; /* Navy Blue Color */
   text-align: center;
   margin-bottom: 40px;
 }
