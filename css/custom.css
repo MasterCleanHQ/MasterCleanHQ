@@ -130,6 +130,45 @@ a:hover {
     color: var(--accent-color);
     background-color: rgba(255, 103, 0, 0.1); /* Light Orange Hover Background */
 }
+
+/*======================================================================================================
+                                Additional Styles for Blog Pages
+======================================================================================================*/
+
+/*======================================================================================================
+                                Additional Styles for Blog Pages
+======================================================================================================*/
+
+/* Blog Content Padding */
+.blog-content {
+    padding: 80px 0 50px 0;
+}
+
+/* Blog Image Styling */
+.blog-image {
+    max-width: 100%;      /* Ensures the image doesn't exceed its container's width */
+    width: 600px;         /* Sets a fixed width; adjust as needed */
+    height: auto;         /* Maintains the image's aspect ratio */
+    display: block;       /* Removes any inline spacing */
+    margin: 20px auto;    /* Adds vertical spacing and centers the image horizontally */
+    border-radius: 8px;   /* Optional: Adds rounded corners for a polished look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .blog-image {
+        width: 100%;          /* Image takes full width on smaller screens */
+        margin: 15px auto;    /* Adjust vertical spacing as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-image {
+        width: 100%;          /* Ensure full width on very small devices */
+        margin: 10px auto;    /* Further adjust spacing for smaller screens */
+    }
+}
 /*======================================================================================================
                             Heading Styles
 =======================================================================================================*/
