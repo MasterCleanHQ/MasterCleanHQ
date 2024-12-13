@@ -166,8 +166,8 @@ main {
   padding-top: 80px; /* Adjust based on navbar height */
   z-index: 1;
   position: relative;
-  background-color: #333; /* Example background to contrast white text */
-  color: #fff; /* Default text color */
+  background-color: #fff; /* Example background to contrast white text */
+  color: #333; /* Default text color */
   min-height: 100vh; /* Ensure it takes up full viewport height */
 }
 
