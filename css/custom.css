@@ -161,7 +161,7 @@ main {
   z-index: 1;
   position: relative;
   background-color: #fff; /* Example background to contrast white text */
-  color: ##00274d; /* Default text color */
+  color: #00274d; /* Default text color */
   min-height: 100vh; /* Ensure it takes up full viewport height */
 }
 
