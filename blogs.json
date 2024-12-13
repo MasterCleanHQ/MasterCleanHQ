@@ -12,12 +12,12 @@
     "url": "blogs/Blog-2.html"
   },
   {
-  "title": "New Blog Title",
-  "image": "img/blog.images/new-blog.jpg",
-  "description": "A short description of the blog.",
-  "content": "Detailed content of the blog goes here.",
-  "url": "blogs/new-blog.html"
-},
+    "title": "New Blog Title",
+    "image": "img/blog.images/new-blog.jpg",
+    "description": "A short description of the blog.",
+    "content": "Detailed content of the blog goes here.",
+    "url": "blogs/new-blog.html"
+  },
   {
     "title": "Keeping Your Business Spotless During the Winter",
     "description": "Learn the best cleaning tips for the cold season.",
