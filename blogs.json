@@ -2,18 +2,18 @@
   {
     "title": "San Angelo Offices Can Benefit From A Great Clean!",
     "description": "Here Are 5 Reasons Why!",
-    "image": "img/blogs.images/blog1.jpg",
+    "image": "img/blog.images/blog1.jpg",
     "url": "blogs/Blog-1.html"
   },
   {
     "title": "Another Great Topic",
     "description": "Check out our latest insights...",
-    "image": "img/blogs.images/blog2.jpg",
+    "image": "img/blog.images/blog2.jpg",
     "url": "blogs/Blog-2.html"
   },
   {
   "title": "New Blog Title",
-  "image": "img/blogs.images/new-blog.jpg",
+  "image": "img/blog.images/new-blog.jpg",
   "description": "A short description of the blog.",
   "content": "Detailed content of the blog goes here.",
   "url": "blogs/new-blog.html"
@@ -21,7 +21,7 @@
   {
     "title": "Keeping Your Business Spotless During the Winter",
     "description": "Learn the best cleaning tips for the cold season.",
-    "image": "img/blogs.images/blog3.jpg",
+    "image": "img/blog.images/blog3.jpg",
     "url": "blogs/Blog-3.html"
   }
 ]
