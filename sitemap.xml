@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Home Page -->
   <url>
     <loc>https://www.mastercleanhq.com/</loc>
     <lastmod>2024-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Blog Posts -->
   <url>
     <loc>https://www.mastercleanhq.com/blogs/Blog-1.html</loc>
     <lastmod>2024-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.mastercleanhq.com/blogs/Blog-2.html</loc>
     <lastmod>2024-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.mastercleanhq.com/blogs/new-blog.html</loc>
     <lastmod>2024-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.mastercleanhq.com/blogs/Blog-3.html</loc>
     <lastmod>2024-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
 </urlset>
