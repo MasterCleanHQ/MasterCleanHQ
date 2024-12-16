@@ -906,7 +906,7 @@ form
 }
 .logo h1
 {
-    color: #F2F2F2;
+    color: #######;
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
 }
@@ -914,7 +914,7 @@ form
 {
     margin-top: 10px; 
     font-size: 16px;
-    color: #f3f3f3;
+    color: #333333;
 }
 .copyright a:hover
 {
@@ -924,7 +924,7 @@ form
 }
 .copyright a
 {
-    color: #FFFFFF;
+    color: #137513;
 }
 .theme
 {
